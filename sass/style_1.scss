@@ -371,7 +371,7 @@ a, a:hover {
 	text-decoration: none;
 }
 .fh5co_hover_news_img:hover > .fh5co_news_img {
-	top: -7px;
+	/*top: -7px;*/
 	@include box-shadow(0, 2px, 3px, 1px, rgba(0,0,0,0.3));
 }
 .fh5co_video_news_bg {
