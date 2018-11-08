@@ -180,14 +180,105 @@
 
 	
 	$(function(){
+        var tmp_hmenu = 
+        '<div class="container padding_786">'+
+            '<nav class="navbar navbar-toggleable-md navbar-light">'+
+                '<button class="navbar-toggler navbar-toggler-right mt-3" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="fa fa-bars"></span></button>'+
+                '<a class="navbar-brand" href="index.html"><img src="images/logo.png" alt="img" class="mobile_logo_width" /></a>'+
+                '<div class="collapse navbar-collapse" id="navbarSupportedContent">'+
+                    '<ul class="navbar-nav mr-auto">'+
+                        '<li class="nav-item active">'+
+                            '<a class="nav-link" href="index.html">首頁 <span class="sr-only">(current)</span></a>'+
+                        '</li>'+
+                        '<li class="nav-item dropdown">'+
+                            '<a class="nav-link dropdown-toggle" href="#" id="dropdownMenuButton2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">品牌 <span class="sr-only">(current)</span></a>'+
+                            '<div class="dropdown-menu" aria-labelledby="dropdownMenuLink_1">'+
+                                '<a class="dropdown-item" href="detail.html">己文堂</a>'+
+                                '<a class="dropdown-item" href="detail.html">陳啟文</a>'+
+                            '</div>'+
+                        '</li>'+
+                        '<li class="nav-item dropdown">'+
+                            '<a class="nav-link dropdown-toggle" href="#" id="dropdownMenuButton2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">產品 <span class="sr-only">(current)</span></a>'+
+                            '<div class="dropdown-menu" aria-labelledby="dropdownMenuLink_1">'+
+                                '<a class="dropdown-item" href="product_list.html?prod=1">碗盤</a>'+
+                                '<a class="dropdown-item" href="product_list.html?prod=2">相框</a>'+
+                                '<a class="dropdown-item" href="product_list.html?prod=3">收納盒</a>'+
+                            '</div>'+
+                        '</li>'+
+                        '<li class="nav-item dropdown">'+
+                            '<a class="nav-link dropdown-toggle" href="#" id="dropdownMenuButton2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">在地材料 <span class="sr-only">(current)</span></a>'+
+                            '<div class="dropdown-menu" aria-labelledby="dropdownMenuLink_1">'+
+                                '<a class="dropdown-item" href="material_list.html?prod=1">陶瓷</a>'+
+                                '<a class="dropdown-item" href="material_list.html?prod=2">木頭</a>'+
+                                '<a class="dropdown-item" href="material_list.html?prod=3">竹鞭</a>'+
+                            '</div>'+
+                        '</li>'+
+                        /*'<li class="nav-item ">'+
+                            '<a class="nav-link" href="detail.html">Detail <span class="sr-only">(current)</span></a>'+
+                        '</li>'+*/
+                    '</ul>'+
+                '</div>'+
+            '</nav>'+
+        '</div>';
+        $('#header_menu').append(tmp_hmenu);
+
+        var tmp_footer =         
+        '<div class="container">'+
+            '<div class="row  ">'+
+                '<div class="col-12 col-md-6 py-4 Reserved"> © Copyright 2018, All rights reserved. Design by <a href="https://freehtml5.co" title="Free HTML5 Bootstrap templates">FreeHTML5.co</a>. </div>'+
+                '<div class="col-12 col-md-6 spdp_right py-4">'+
+                    '<a href="#" class="footer_last_part_menu">Home</a>'+
+                    '<a href="Contact_us.html" class="footer_last_part_menu">About</a>'+
+                '</div>'+
+            '</div>'+
+        '</div>'+
+        '<div class="gototop js-top">'+
+            '<a href="#" class="js-gotop"><i class="fa fa-arrow-up"></i></a>'+
+        '</div>';
+        $('#footer_id').append(tmp_footer);
+
+
 		owlCarousel();
 		videos();
         contentWayPoint();
 		goToTop();
-		googleTranslateFormStyling();
+        googleTranslateFormStyling();
 	});
 
 }());
-function googleTranslateElementInit() {
+/*function googleTranslateElementInit() {
     new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
-}
+}*/
+
+/*
+jQuery Url Plugin
+demo: use $.url.param("abc") get value
+*/
+(function ($) {
+	$.url = {};
+	$.extend($.url, {
+		_params: {},
+		init: function () {
+			var paramsRaw = "";
+			try {
+				paramsRaw =
+					(document.location.href.split("?", 2)[1] || "").split("#")[0].split("&") || [];
+				for (var i = 0; i < paramsRaw.length; i++) {
+					var single = paramsRaw[i].split("=");
+					if (single[0])
+						this._params[single[0]] = unescape(single[1]);
+				}
+			}
+			catch (e) {
+				alert(e);
+			}
+		},
+		param: function (name) {
+			return this._params[name] || "";
+		},
+		paramAll: function () {
+			return this._params;
+		}
+	});
+	$.url.init();
+})(jQuery);
