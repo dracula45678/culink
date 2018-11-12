@@ -225,10 +225,10 @@
         var tmp_footer =         
         '<div class="container">'+
             '<div class="row  ">'+
-                '<div class="col-12 col-md-6 py-4 Reserved"> © Copyright 2018, All rights reserved. Design by <a href="https://freehtml5.co" title="Free HTML5 Bootstrap templates">FreeHTML5.co</a>. </div>'+
+                '<div class="col-12 col-md-6 py-4 Reserved"> Culink </div>'+
                 '<div class="col-12 col-md-6 spdp_right py-4">'+
-                    '<a href="#" class="footer_last_part_menu">Home</a>'+
-                    '<a href="Contact_us.html" class="footer_last_part_menu">About</a>'+
+                    '<a href="index.html" class="footer_last_part_menu">首頁</a>'+
+                    '<a href="Contact_us.html" class="footer_last_part_menu">關於我們</a>'+
                 '</div>'+
             '</div>'+
         '</div>'+
