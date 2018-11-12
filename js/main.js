@@ -213,9 +213,9 @@
                                 '<a class="dropdown-item" href="material_list.html?prod=3">竹鞭</a>'+
                             '</div>'+
                         '</li>'+
-                        /*'<li class="nav-item ">'+
-                            '<a class="nav-link" href="detail.html">Detail <span class="sr-only">(current)</span></a>'+
-                        '</li>'+*/
+                        '<li class="nav-item ">'+
+                            '<a class="nav-link" href="Contact_us.html">關於我們 <span class="sr-only">(current)</span></a>'+
+                        '</li>'+
                     '</ul>'+
                 '</div>'+
             '</nav>'+
