@@ -348,10 +348,21 @@ a, a:hover {
 	@include box-shadow(0, 2px, 3px, 1px, rgba(0,0,0,0));
 	@include transition(all 0.5s);
 }
-.fh5co_news_img > img {
+.fh5co_news_img > a > img, .fh5co_news_img_noborder > a > img{
 	/*height: 260px;*/
 	width: 100%;
 }
+.fh5co_news_img > img, .fh5co_news_img_noborder > img{
+	width: 100%;
+}
+.fh5co_news_img_noborder{
+	@include border-radius(5px);
+	overflow: hidden;
+	position: relative;
+	top: 0;
+	@include transition(all 0.5s);
+}
+
 .c_b {
 	color: #424040;
 }
@@ -688,6 +699,9 @@ a, a:hover {
 .fh5co_contact_us_no_text {
 	font-size: 16px;
 }
+.fh5co_contact_us_no_text a{
+	color: #777777;
+}
 .fh5co_contact_us_no_icon_difh5co_hover:hover > .fh5co_contact_us_no_icon_difh5co_hover_1 > .fh5co_contact_us_no_icon_div {
 	color: $yellow!important;
 	cursor: pointer;
@@ -912,4 +926,8 @@ a, a:hover {
 	p, ul li {
 		font-size: 1.05rem;
 	}
+}
+.det_t{
+	margin-top: 15px;
+	display: inline-block;
 }

@@ -385,9 +385,28 @@ a, a:hover {
   transition: all all 0.5s ease;
 }
 
-.fh5co_news_img > img {
+.fh5co_news_img > a > img, .fh5co_news_img_noborder > a > img {
   /*height: 260px;*/
   width: 100%;
+}
+
+.fh5co_news_img > img, .fh5co_news_img_noborder > img {
+  width: 100%;
+}
+
+.fh5co_news_img_noborder {
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  border-radius: 5px;
+  overflow: hidden;
+  position: relative;
+  top: 0;
+  -moz-transition: all all 0.5s ease;
+  -o-transition: all all 0.5s ease;
+  -webkit-transition: all all 0.5s ease;
+  -ms-transition: all all 0.5s ease;
+  transition: all all 0.5s ease;
 }
 
 .c_b {
@@ -843,6 +862,10 @@ a, a:hover {
   font-size: 16px;
 }
 
+.fh5co_contact_us_no_text a {
+  color: #777777;
+}
+
 .fh5co_contact_us_no_icon_difh5co_hover:hover > .fh5co_contact_us_no_icon_difh5co_hover_1 > .fh5co_contact_us_no_icon_div {
   color: #f5bc04 !important;
   cursor: pointer;
@@ -1111,6 +1134,11 @@ a, a:hover {
 }
 #fh5co-single-content p, #fh5co-single-content ul li {
   font-size: 1.05rem;
+}
+
+.det_t {
+  margin-top: 15px;
+  display: inline-block;
 }
 
 /*# sourceMappingURL=style_1.css.map */

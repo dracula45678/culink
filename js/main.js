@@ -193,24 +193,24 @@
                         '<li class="nav-item dropdown">'+
                             '<a class="nav-link dropdown-toggle" href="#" id="dropdownMenuButton2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">品牌 <span class="sr-only">(current)</span></a>'+
                             '<div class="dropdown-menu" aria-labelledby="dropdownMenuLink_1">'+
-                                '<a class="dropdown-item" href="detail.html">己文堂</a>'+
-                                '<a class="dropdown-item" href="detail.html">陳啟文</a>'+
+                                '<a class="dropdown-item" href="detail01.html">After 5</a>'+
+                                '<a class="dropdown-item" href="detail.html">一生一色</a>'+
                             '</div>'+
                         '</li>'+
-                        '<li class="nav-item dropdown">'+
+                        /*'<li class="nav-item dropdown">'+
                             '<a class="nav-link dropdown-toggle" href="#" id="dropdownMenuButton2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">產品 <span class="sr-only">(current)</span></a>'+
                             '<div class="dropdown-menu" aria-labelledby="dropdownMenuLink_1">'+
                                 '<a class="dropdown-item" href="product_list.html?prod=1">碗盤</a>'+
                                 '<a class="dropdown-item" href="product_list.html?prod=2">相框</a>'+
                                 '<a class="dropdown-item" href="product_list.html?prod=3">收納盒</a>'+
                             '</div>'+
-                        '</li>'+
+                        '</li>'+*/
                         '<li class="nav-item dropdown">'+
                             '<a class="nav-link dropdown-toggle" href="#" id="dropdownMenuButton2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">在地材料 <span class="sr-only">(current)</span></a>'+
                             '<div class="dropdown-menu" aria-labelledby="dropdownMenuLink_1">'+
-                                '<a class="dropdown-item" href="material_list.html?prod=1">陶瓷</a>'+
-                                '<a class="dropdown-item" href="material_list.html?prod=2">木頭</a>'+
-                                '<a class="dropdown-item" href="material_list.html?prod=3">竹鞭</a>'+
+                                '<a class="dropdown-item" href="material_list.html?prod=1">天然植物</a>'+
+                                '<a class="dropdown-item" href="material_list.html?prod=2">蘭陽黏土</a>'+
+                                '<a class="dropdown-item" href="material_list.html?prod=3">在地木頭</a>'+
                             '</div>'+
                         '</li>'+
                         '<li class="nav-item ">'+
@@ -243,6 +243,28 @@
         contentWayPoint();
 		goToTop();
         googleTranslateFormStyling();
+
+        //slide to product
+        if (location.href.toLowerCase().match('product') != null) {
+            jQuery('html, body').animate({ scrollTop: ($('.prod_div').offset().top) + 10 }, 800);
+        }
+
+        //set menu position
+        $('#navbarSupportedContent li').removeClass('active');
+
+        if (location.href.toLowerCase().match('contact_us')) {
+           $('#navbarSupportedContent li:eq(3)').addClass('active');
+        }
+        else if(location.href.toLowerCase().match('material_list')){
+           $('#navbarSupportedContent li:eq(2)').addClass('active');
+        }
+        else if(location.href.toLowerCase().match('detail')){
+            $('#navbarSupportedContent li:eq(1)').addClass('active');
+        }
+        else{
+            $('#navbarSupportedContent li:eq(0)').addClass('active');
+        }
+        
 	});
 
 }());
