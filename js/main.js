@@ -226,7 +226,7 @@
         '<div class="container">'+
             '<div class="row  ">'+
                 '<div class="col-12 col-md-6 py-4 Reserved"> Culink </div>'+
-                '<div class="col-12 col-md-6 spdp_right py-4">'+
+                '<div class="col-12 col-md-6 spdp_right py-4 pr-5">'+
                     '<a href="index.html" class="footer_last_part_menu">首頁</a>'+
                     '<a href="Contact_us.html" class="footer_last_part_menu">關於我們</a>'+
                 '</div>'+
