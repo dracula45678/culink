@@ -267,7 +267,7 @@
         
 
         //stop copy
-        $('body').bind("contextmenu", function(e){ 
+        $('body').bind("contextmenu", function(event){ 
             alert('本網站目前僅為demo呈現，網站所有的圖片與文字內容皆屬於原作者，請勿任意複製使用。');
             return false; 
         });
@@ -298,8 +298,8 @@ demo: use $.url.param("abc") get value
 						this._params[single[0]] = unescape(single[1]);
 				}
 			}
-			catch (e) {
-				alert(e);
+			catch (event) {
+				alert(event);
 			}
 		},
 		param: function (name) {
