@@ -225,9 +225,9 @@
         var tmp_footer =         
         '<div class="container">'+
             '<div class="row  ">'+
-                '<div class="col-12 col-md-6 py-4 Reserved"> Culink </div>'+
-                '<div class="col-12 col-md-6 spdp_right py-4 pr-5">'+
-                    '<a href="index.html" class="footer_last_part_menu">首頁</a>'+
+                '<div class="col-12 col-md-8 py-4 Reserved"> 本網站目前僅為demo呈現，網站所有的圖片與文字內容皆屬於原作者，請勿任意複製使用。 </div>'+
+                '<div class="col-12 col-md-4 spdp_right py-4 pr-5">'+
+                    '<a href="index.html" class="footer_last_part_menu">Culink</a>'+
                     '<a href="Contact_us.html" class="footer_last_part_menu">關於我們</a>'+
                 '</div>'+
             '</div>'+
@@ -265,6 +265,13 @@
             $('#navbarSupportedContent li:eq(0)').addClass('active');
         }
         
+
+        //stop copy
+        $('body').bind("contextmenu", function(e){ 
+            alert('本網站目前僅為demo呈現，網站所有的圖片與文字內容皆屬於原作者，請勿任意複製使用。');
+            return false; 
+        });
+        //$('img').bind("contextmenu", function(e){ return false; });
 	});
 
 }());

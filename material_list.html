@@ -6,16 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>在地材料</title>
     <meta name="description" content="Culink">
-	<meta name="keywords" content="Culink 文化 文創 設計 職人 工藝">
-	<meta itemprop="name" content="Culink">
-	<meta itemprop="description" content="Culink">
-	<meta itemprop="image" content="https://dracula45678.github.io/culink/images/logo.jpg">
-	<!-- Facebook -->
-	<meta property="og:title" content="Culink" />
-	<meta property="og:image" content="https://dracula45678.github.io/culink/images/logo.jpg" />
-	<meta property="og:description" content="Culink" />
-	<meta property="og:url" content="https://dracula45678.github.io/culink/material_list.html">
-	<meta property="og:site_name" content="Culink">
+    <meta name="keywords" content="Culink 文化 文創 設計 職人 工藝">
+    <meta itemprop="name" content="Culink">
+    <meta itemprop="description" content="Culink">
+    <meta itemprop="image" content="https://dracula45678.github.io/culink/images/logo.jpg">
+    <!-- Facebook -->
+    <meta property="og:title" content="Culink" />
+    <meta property="og:image" content="https://dracula45678.github.io/culink/images/logo.jpg" />
+    <meta property="og:description" content="Culink" />
+    <meta property="og:url" content="https://dracula45678.github.io/culink/material_list.html">
+    <meta property="og:site_name" content="Culink">
     <meta property="og:type" content="website" />
     <link href="css/media_query.css" rel="stylesheet" type="text/css" />
     <link href="css/bootstrap.css" rel="stylesheet" type="text/css" />
@@ -25,30 +25,34 @@
     <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
     <link href="css/owl.carousel.css" rel="stylesheet" type="text/css" />
     <link href="css/owl.theme.default.css" rel="stylesheet" type="text/css" />
-    <!-- Bootstrap CSS -->
+    <link href="css/jquery.fancybox.min.css" rel="stylesheet" type="text/css" />
     <link href="css/style_1.css" rel="stylesheet" type="text/css" />
-    <!-- Modernizr JS -->
     <script src="js/modernizr-3.5.0.min.js"></script>
     <style>
         #main {
             height: auto;
             min-height: 80vh;
         }
-        #main .row{
+
+        #main .row {
             clear: both;
             margin-right: 0px;
             margin-left: 0px;
         }
+
         #main.site-content {
             overflow: hidden;
         }
+
         #main .py-4 {
             padding-top: 4rem;
             padding-bottom: 4rem;
         }
+
         #main .mb-6 {
             margin-bottom: 6rem;
         }
+
         #main .form-control {
             box-shadow: none;
             padding: 13px 10px;
@@ -58,54 +62,68 @@
             border-radius: 5px;
             border-color: #DFE2E8;
         }
-        #main .form-control:focus, #main .form-control.input-focus {
+
+        #main .form-control:focus,
+        #main .form-control.input-focus {
             box-shadow: none !important;
             border-color: #f5bc04;
         }
-        #main .list-inline{
+
+        #main .list-inline {
             width: 100%;
             display: inline-block;
         }
-        #main .list-inline li{
+
+        #main .list-inline li {
             position: relative;
             float: left;
         }
+
         #main .card {
             background: #FFF;
             box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.15);
             border-radius: 5px;
             overflow: hidden;
         }
+
         #main .card__content {
             padding: 15px;
             font-size: 14px;
             line-height: 22px;
         }
+
         #main .card__content p:last-child {
             margin-bottom: 0;
         }
-        #main .card__content img{
+
+        #main .card__content img {
             width: 100%;
             height: auto;
-            margin-bottom: 10px;
+            /*margin-bottom: 10px;*/
         }
+
         #main .card__title {
             font-weight: 500;
             font-size: 16px;
             line-height: 24px;
         }
+
         #main .card__title a {
             color: #3a404d;
             text-decoration: none;
         }
-        #main .card__title a:hover, #main .card__title a:focus {
+
+        #main .card__title a:hover,
+        #main .card__title a:focus {
             color: #f5bc04;
             text-decoration: none;
         }
+
         #main .glossary__nav__item.active a {
             color: #FFF;
             background-color: #f5bc04;
         }
+
         #main .glossary__nav__item a {
             width: auto;
             font-size: 16px;
@@ -114,21 +132,26 @@
             text-align: center;
             display: block;
             margin: 0px 10px 10px 0px;
-            padding: 0px 10px; 
+            padding: 0px 10px;
         }
-        #main .glossary__nav__item a:hover, #main .glossary__nav__item a:focus {
+
+        #main .glossary__nav__item a:hover,
+        #main .glossary__nav__item a:focus {
             color: #FFF;
             background-color: #f5bc04;
         }
+
         #main .glossary__nav__item a.card__content {
             padding: 13px 10px;
             margin-bottom: 5px;
             border-radius: 3px;
         }
+
         #main .glossary__search__form {
             max-width: 500px;
             position: relative;
         }
+
         #main .glossary__search__form:before {
             content: "\f002";
             color: #aaa;
@@ -138,43 +161,54 @@
             top: 12px;
             font-size: 18px;
         }
+
         #main .glossary__search__form .form-control {
             padding-left: 40px;
         }
+
         #main .glossary__results__row {
             overflow: hidden;
             margin-bottom: 40px;
             transition: all 0.4s ease-in-out;
         }
+
         #main .glossary__results__row:last-child {
             margin-bottom: 0;
         }
+
         #main .glossary__results__row.inactive {
             opacity: 0;
             height: 0;
             margin: 0;
             width: 100%;
         }
+
         #main .glossary__results__term {
             color: #f5bc04;
         }
+
         #main .glossary__results__item {
             margin-bottom: 20px;
         }
+
         #main .glossary__results__item a {
             display: block;
             text-decoration: none;
             color: #3a404d;
         }
+
         #main .glossary__results__item a.card {
             border: 2px solid transparent;
         }
+
         #main .glossary__results__item a:hover {
             border-color: #f5bc04;
         }
+
         #main .glossary__results__item a:hover .card__title {
             color: #f5bc04;
         }
+
         #main .title-style--three {
             margin-bottom: 15px;
             position: relative;
@@ -183,6 +217,7 @@
             width: auto;
             float: left;
         }
+
         #main .title-style--three:after {
             content: "";
             background: #f5bc04;
@@ -373,33 +408,24 @@
 
                         <div class="glossary__results mb-6">
                             <div class="glossary__results__row" data-term="天然植物">
-                                <h3 class="glossary__results__term title-style--three mb-3">天然植物</h3> 
+                                <h3 class="glossary__results__term title-style--three mb-3">天然植物</h3>
                                 <p style="display: inline-block;" class="p-3">
-                                    「染」即為天然植物染;染料的來源為植物的各各部分,如根、莖、葉、果實等。 染材的紡紗線種類可分為,動物性纖維:如蠶絲、羊毛等。植物性纖維:如棉、 麻、香蕉絲等。而研究利用的染材絲線中的香蕉絲乃是源自於宜蘭葛瑪蘭族的傳統 染織線材,與宜蘭有著淵源流長的關係。
+                                    「染」即為天然植物染;染料的來源為植物的各各部分,如根、莖、葉、果實等。 染材的紡紗線種類可分為,動物性纖維:如蠶絲、羊毛等。植物性纖維:如棉、
+                                    麻、香蕉絲等。而研究利用的染材絲線中的香蕉絲乃是源自於宜蘭葛瑪蘭族的傳統 染織線材,與宜蘭有著淵源流長的關係。
                                 </p>
                                 <div class="row">
                                     <div class="glossary__results__item col-md-3 col-sm-6" data-item="天然植物">
-                                        <a class="card card__content" href="#">
-                                            <h4 class="card__title">3G</h4>
-                                            <img src="./images/nick-karvounis-78711.jpg">
-                                            <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                                Iste vel, magnam incidunt obcaecati.</p>
-                                        </a>
+                                        <div class="card card__content" href="./images/a001.jpg" data-fancybox="imgs-preview">
+                                            <img src="./images/a001.jpg">
+                                        </div>
                                     </div>
-                                    <!--END Glossary Result item-->
                                     <div class="glossary__results__item col-md-3 col-sm-6" data-item="天然植物">
-                                        <a class="card card__content" href="#">
-                                            <h4 class="card__title">4G</h4>
-                                            <img src="./images/nick-karvounis-78711.jpg">
-                                            <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                                Iste vel, magnam incidunt obcaecati.</p>
-                                        </a>
+                                        <div class="card card__content" href="./images/a002.jpg" data-fancybox="imgs-preview">
+                                            <img src="./images/a002.jpg">
+                                        </div>
                                     </div>
-                                    <!--END Glossary Result item-->
                                 </div>
                             </div>
-                            <!--END Glossary Results Row-->
-
                             <div class="glossary__results__row" data-term="蘭陽黏土">
                                 <h3 class="glossary__results__term title-style--three mb-3">蘭陽黏土</h3>
                                 <p style="display: inline-block;" class="p-3">
@@ -407,36 +433,17 @@
                                 </p>
                                 <div class="row">
                                     <div class="glossary__results__item col-md-3 col-sm-6" data-item="蘭陽黏土">
-                                        <a class="card card__content" href="#">
-                                            <h4 class="card__title">Application Cycle Management</h4>
-                                            <img src="./images/nick-karvounis-78711.jpg">
-                                            <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                                Iste vel, magnam incidunt obcaecati.</p>
-                                        </a>
+                                        <div class="card card__content" href="./images/b001.jpg" data-fancybox="imgs-preview">
+                                            <img src="./images/b001.jpg">
+                                        </div>
                                     </div>
-                                    <!--END Glossary Result item-->
                                     <div class="glossary__results__item col-md-3 col-sm-6" data-item="蘭陽黏土">
-                                        <a class="card card__content" href="#">
-                                            <h4 class="card__title">API</h4>
-                                            <img src="./images/nick-karvounis-78711.jpg">
-                                            <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                                Iste vel, magnam incidunt obcaecati.</p>
-                                        </a>
+                                        <div class="card card__content" href="./images/b002.jpg" data-fancybox="imgs-preview">
+                                            <img src="./images/b002.jpg">
+                                        </div>
                                     </div>
-                                    <!--END Glossary Result item-->
-                                    <div class="glossary__results__item col-md-3 col-sm-6" data-item="蘭陽黏土">
-                                        <a class="card card__content" href="#">
-                                            <h4 class="card__title">AVR</h4>
-                                            <img src="./images/nick-karvounis-78711.jpg">
-                                            <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                                Iste vel, magnam incidunt obcaecati.</p>
-                                        </a>
-                                    </div>
-                                    <!--END Glossary Result item-->
                                 </div>
                             </div>
-                            <!--END Glossary Results Row-->
-
                             <div class="glossary__results__row" data-term="在地木頭">
                                 <h3 class="glossary__results__term title-style--three mb-3">在地木頭</h3>
                                 <p style="display: inline-block;" class="p-3">
@@ -444,32 +451,24 @@
                                 </p>
                                 <div class="row">
                                     <div class="glossary__results__item col-md-3 col-sm-6" data-item="在地木頭">
-                                        <a class="card card__content" href="#">
-                                            <h4 class="card__title">Bandwidth</h4>
-                                            <img src="./images/nick-karvounis-78711.jpg">
-                                            <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                                Iste vel, magnam incidunt obcaecati.</p>
-                                        </a>
+                                        <div class="card card__content" href="./images/c001.jpg" data-fancybox="imgs-preview">
+                                            <img src="./images/c001.jpg">
+                                        </div>
                                     </div>
                                     <!--END Glossary Result item-->
                                     <div class="glossary__results__item col-md-3 col-sm-6" data-item="在地木頭">
-                                        <a class="card card__content" href="#">
-                                            <h4 class="card__title">Back Office</h4>
-                                            <img src="./images/nick-karvounis-78711.jpg">
-                                            <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                                Iste vel, magnam incidunt obcaecati.</p>
-                                        </a>
+                                        <div class="card card__content" href="./images/c002.jpg" data-fancybox="imgs-preview">
+                                            <img src="./images/c002.jpg">
+                                        </div>
                                     </div>
-                                    <!--END Glossary Result item-->
-                                    <div class="glossary__results__item col-md-3 col-sm-6" data-item="在地木頭">
+                                    <!--<div class="glossary__results__item col-md-3 col-sm-6" data-item="在地木頭">
                                         <a class="card card__content" href="#">
                                             <h4 class="card__title">Bluetooth</h4>
                                             <img src="./images/nick-karvounis-78711.jpg">
                                             <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                                                 Iste vel, magnam incidunt obcaecati.</p>
                                         </a>
-                                    </div>
-                                    <!--END Glossary Result item-->
+                                    </div>-->
                                 </div>
                             </div>
                             <!--END Glossary Results Row-->
@@ -490,12 +489,11 @@
         crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn"
         crossorigin="anonymous"></script>
-    <!-- Waypoints -->
     <script src="js/jquery.waypoints.min.js"></script>
-    <!-- Main -->
+    <script src="js/jquery.fancybox.min.js"></script>
     <script src="js/main.js"></script>
     <script>
-        $(function(){
+        $(function () {
             initGlossaryFilter();
         });
         // Filter Glossary items
@@ -552,19 +550,19 @@
                     }
                 }
             });
-            
-            switch(parseInt($.url.param("prod"))){
+
+            switch (parseInt($.url.param("prod"))) {
                 case 1:
                     $(".glossary__nav a:eq(0)").click().click();
-                break;
+                    break;
 
                 case 2:
                     $(".glossary__nav a:eq(1)").click();
-                break;
+                    break;
 
                 case 3:
                     $(".glossary__nav a:eq(2)").click();
-                break;
+                    break;
 
                 default:
             }
