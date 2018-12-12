@@ -209,7 +209,7 @@
                             '<a class="nav-link dropdown-toggle" href="#" id="dropdownMenuButton2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">在地材料 <span class="sr-only">(current)</span></a>'+
                             '<div class="dropdown-menu" aria-labelledby="dropdownMenuLink_1">'+
                                 '<a class="dropdown-item" href="material_list.html?prod=1">天然植物</a>'+
-                                '<a class="dropdown-item" href="material_list.html?prod=2">蘭陽黏土</a>'+
+                                '<a class="dropdown-item" href="material_list.html?prod=2">黏土</a>'+
                                 '<a class="dropdown-item" href="material_list.html?prod=3">在地木頭</a>'+
                             '</div>'+
                         '</li>'+
