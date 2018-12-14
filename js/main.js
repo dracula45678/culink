@@ -193,7 +193,7 @@
                         '<li class="nav-item dropdown">'+
                             '<a class="nav-link dropdown-toggle" href="#" id="dropdownMenuButton2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">品牌 <span class="sr-only">(current)</span></a>'+
                             '<div class="dropdown-menu" aria-labelledby="dropdownMenuLink_1">'+
-                                '<a class="dropdown-item" href="detail01.html">After 5</a>'+
+                                //'<a class="dropdown-item" href="detail01.html">After 5</a>'+
                                 '<a class="dropdown-item" href="detail02.html">Simple Life</a>'+
                             '</div>'+
                         '</li>'+
